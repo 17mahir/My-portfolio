@@ -13,6 +13,15 @@ import Footer from './components/Footer';
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+
+   useEffect(() => {
+    // Apply theme class to document
+    document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+    
+    // Optionally save preference to localStorage
+    localStorage.setItem('darkMode', JSON.stringify(darkMode));
+  }, [darkMode]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,6 +65,8 @@ function App() {
         setActiveSection={scrollToSection}
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
       />
       <HeroSection />
       <AboutSection />

@@ -7,6 +7,7 @@ import shopping from '../assets/images/shopping.jpg';
 import student from '../assets/images/student.jpg';
 import warehouse from '../assets/images/warehouse.png';
 import weather from '../assets/images/weather.png';
+import porfolio from '../assets/images/portfolio.png';
 
 
 const ProjectsSection = () => {
@@ -31,12 +32,12 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard that provides current weather data and forecasts with beautiful data visualizations.',
-      image: weather,
-      technologies: ['React', 'Chart.js', 'OpenWeather API', 'CSS'],
-      github: 'https://github.com/17mahir/weather-app-react',
-      demo: '#'
+      title: 'My Portfolio',
+      description: 'To present my technical background, professional projects, and development experience to potential employers or clients in a polished and accessible way.',
+      image: porfolio,
+      technologies: ['React', 'CSS'],
+      github: 'https://github.com/17mahir/My-portfolio',
+      demo: 'https://mahirlad.vercel.app/'
     },
     {
       id: 4,
@@ -63,6 +64,15 @@ const ProjectsSection = () => {
       image: warehouse,
       technologies: ['E.js','Node.js','Express.js','MongoDB'],
       github: 'https://github.com/17mahir/warehouse-mgmt-system',
+      demo: '#'
+    },
+    {
+      id: 7,
+      title: 'Weather Dashboard',
+      description: 'A responsive weather dashboard that provides current weather data and forecasts with beautiful data visualizations.',
+      image: weather,
+      technologies: ['React', 'Chart.js', 'OpenWeather API', 'CSS'],
+      github: 'https://github.com/17mahir/weather-app-react',
       demo: '#'
     }
   ];
